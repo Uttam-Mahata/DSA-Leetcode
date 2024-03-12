@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class EvenOddTree {
     public boolean isEvenOddTree(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
