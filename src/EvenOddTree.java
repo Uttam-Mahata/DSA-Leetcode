@@ -1,6 +1,5 @@
-import java.util.LinkedList;
-import java.util.Queue;
 
+import java.util.*;
 public class EvenOddTree {
     public boolean isEvenOddTree(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
@@ -35,18 +34,17 @@ public class EvenOddTree {
     
     
 }
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+
+class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
+ 

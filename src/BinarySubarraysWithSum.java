@@ -1,10 +1,10 @@
-public class BinarySubarraysWithSum {
-    public int numSubarraysWithSum(int[] A, int goal) {
-        int[] count = new int[A.length + 1];
+class BinarySubarraysWithSum {
+    public int numSubarraysWithSum(int[] nums, int goal) {
+        int[] count = new int[nums.length + 1];
         count[0] = 1;
         int sum = 0;
         int res = 0;
-        for (int a : A) {
+        for (int a : nums) {
             sum += a;
             if (sum >= goal) {
                 res += count[sum - goal];
@@ -12,6 +12,6 @@ public class BinarySubarraysWithSum {
             count[sum]++;
         }
         return res;
-       
+        
     }
 }
